@@ -1,0 +1,24 @@
+passo 01
+configurar o arquivo dockerfile
+configurar o arquivo .dockerignore
+
+Passo 02 - Criando a build
+docker build -t meuusuario/minhaaplicacao:1.0 . 
+
+Passo 03 - Rodando o conteiner
+docker run -p 3000:3000 meuusuario/minhaaplicacao:1.0
+
+Passo 04 - Publicação
+docker push meuusuario/minhaaplicacao:1.0
+
+Passo 06 (como acessar os containers publicos)
+acessar: https://labs.play-with-docker.com/
+realizar o login e criar uma nova instancia 
+
+Passo 06.1 clonando uma imagem do docker
+docker pull meuusuario/minhaaplicacao:1.0
+
+Passo 06.2 executando
+docker run -p 3000:3000 meuusuario/minhaaplicacao:1.0
+
+
